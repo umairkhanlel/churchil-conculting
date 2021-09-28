@@ -9,7 +9,15 @@
     <link rel="stylesheet" href="css/slider-css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>churcill-councelling</title>
+    <script>
+        $(document).ready(function(){
+            $(".icon").click(function(){
+            $("ul").slideToggle( );
+        });
+    });
+    </script>
 
 </head>
 <body>
@@ -19,6 +27,7 @@
                 <div class="header">
                     <img src="images/logo.png" alt="#">
                     <div class="menu">
+                        <div class="icon"> <i class="fa fa-bars"></i></div>
                         <ul>
                             <li>
                                 <div class="grid">
@@ -274,9 +283,9 @@
                     <div class="menu-4">
                         <h2>Connect</h2>
                         <ul>
-                            <li><a href=""><i class="fa fa-envelope"></i><p>Info@churchill.com.au</p></a></li>
-                            <li><a href=""><i class="fa fa-phone"></i><p>Phone: (08) 6311 7011</p></a></li>
-                            <li><a href=""><i class="fa fa-map-marker"></i><p>View Map</p></a></li>
+                            <li><a href=""><i class="fa fa-envelope"></i></a><p>Info@churchill.com.au</p></li>
+                            <li><a href=""><i class="fa fa-phone"></i></a><p>Phone: (08) 6311 7011</p></li>
+                            <li><a href=""><i class="fa fa-map-marker"></i></a><p>View Map</p></li>
                         </ul>
                         <i class="fa fa-linkedin-square"></i>
                         <i class="fa fa-twitter"></i>

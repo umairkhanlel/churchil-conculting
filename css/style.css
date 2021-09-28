@@ -10,6 +10,11 @@
   background-color: #0d3c7d;
   max-width: 1920px;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-container {
+    background-color: #ffffff;
+  }
+}
 .main-container .inner-container {
   max-width: 1060px;
   margin: 0 auto;
@@ -21,6 +26,7 @@
 @media (min-width: 320px) and (max-width: 767px) {
   .main-container header {
     width: 100%;
+    height: auto;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -63,8 +69,29 @@
   display: grid;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  .main-container header .inner-container .header .menu {
+  .main-container header .inner-container .header .menu .icon {
+    text-align: right;
+  }
+}
+.main-container header .inner-container .header .menu .icon i {
+  display: none;
+  font-size: 18px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-container header .inner-container .header .menu .icon i {
+    display: block;
+    margin-bottom: 5px;
+    text-align: right;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-container header .inner-container .header .menu ul {
     display: none;
+  }
+}
+@media (min-width: 768px) {
+  .main-container header .inner-container .header .menu ul {
+    display: block;
   }
 }
 .main-container header .inner-container .header .menu ul li {
@@ -76,6 +103,14 @@
 .main-container header .inner-container .header .menu ul li:last-child {
   margin: 0;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-container header .inner-container .header .menu ul li {
+    display: block;
+    margin: 0px 0px 10px 0px;
+    margin-bottom: none;
+    text-align: center;
+  }
+}
 @media (min-width: 768px) and (max-width: 1023px) {
   .main-container header .inner-container .header .menu ul li {
     margin-right: 15px;
@@ -86,14 +121,23 @@
 }
 .main-container header .inner-container .header .menu ul li a {
   text-decoration: none;
+  font-weight: bold;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-container header .inner-container .header .menu ul li a {
+    font-weight: normal;
+    font-size: 8px;
+  }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .main-container header .inner-container .header .menu ul li a {
     font-size: 11px;
+    font-weight: normal;
   }
 }
 .main-container header .inner-container .header .menu ul li i {
   text-align: center;
+  color: #76d2fa;
 }
 .main-container header .inner-container .header .menu ul li i:hover {
   cursor: pointer;
@@ -767,6 +811,7 @@
 @media (min-width: 320px) and (max-width: 767px) {
   .main-container footer {
     width: 100%;
+    padding: 0px;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -782,7 +827,7 @@
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .main-container footer .inner-container .menu {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     padding: 15px;
   }
 }
@@ -797,6 +842,11 @@
   font-size: 18px;
   font-weight: lighter;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-container footer .inner-container .menu .menu-1 h2 {
+    font-weight: bold;
+  }
+}
 .main-container footer .inner-container .menu .menu-1 ul li {
   list-style: none;
   margin-bottom: 13px;
@@ -806,7 +856,7 @@
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .main-container footer .inner-container .menu .menu-1 ul li {
-    margin-bottom: 5px;
+    margin: 0 0 5px 10px;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -834,6 +884,11 @@
   font-size: 18px;
   font-weight: lighter;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-container footer .inner-container .menu .menu-2 h2 {
+    font-weight: bold;
+  }
+}
 .main-container footer .inner-container .menu .menu-2 ul li {
   list-style: none;
   margin-bottom: 13px;
@@ -843,7 +898,7 @@
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .main-container footer .inner-container .menu .menu-2 ul li {
-    margin-bottom: 5px;
+    margin: 0 0 5px 10px;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -871,6 +926,11 @@
   font-size: 18px;
   font-weight: lighter;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-container footer .inner-container .menu .menu-3 h2 {
+    font-weight: bold;
+  }
+}
 .main-container footer .inner-container .menu .menu-3 ul li {
   list-style: none;
   margin-bottom: 13px;
@@ -880,7 +940,7 @@
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .main-container footer .inner-container .menu .menu-3 ul li {
-    margin-bottom: 5px;
+    margin: 0 0 5px 10px;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -908,31 +968,28 @@
   font-size: 18px;
   font-weight: lighter;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-container footer .inner-container .menu .menu-4 h2 {
+    font-weight: bold;
+  }
+}
 .main-container footer .inner-container .menu .menu-4 ul li {
   list-style: none;
   margin-bottom: 13px;
+  display: grid;
+  grid-template-columns: auto 1fr;
 }
 .main-container footer .inner-container .menu .menu-4 ul li:last-child {
   margin-bottom: 30px;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .main-container footer .inner-container .menu .menu-4 ul li {
-    margin-bottom: 5px;
+    margin: 0 0 5px 10px;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .main-container footer .inner-container .menu .menu-4 ul li {
     margin-bottom: 5px;
-  }
-}
-.main-container footer .inner-container .menu .menu-4 ul li i {
-  padding-right: 10px;
-  color: #70707d;
-  font-size: 25px;
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  .main-container footer .inner-container .menu .menu-4 ul li {
-    font-size: 20px;
   }
 }
 .main-container footer .inner-container .menu .menu-4 ul li a {
@@ -950,6 +1007,19 @@
     display: grid;
     grid-template-columns: 35px 1fr;
   }
+}
+.main-container footer .inner-container .menu .menu-4 ul li a i {
+  padding-right: 10px;
+  color: #70707d;
+  font-size: 25px;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main-container footer .inner-container .menu .menu-4 ul li a {
+    font-size: 20px;
+  }
+}
+.main-container footer .inner-container .menu .menu-4 ul li p {
+  color: #ffffff;
 }
 .main-container footer .inner-container .menu .menu-4 i {
   color: #ffffff;
